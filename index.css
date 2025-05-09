@@ -1,40 +1,159 @@
-body{
+body {
     background-color: black;
     color: white;
 }
 
-#Home{
-    padding:5px 300px 5px 5px;
+a {
+    color: white;
+    text-decoration: underline;
 }
 
-#upBox{
+a:hover {
+    text-decoration: none;
+}
+
+#Home {
+    padding: 5px 300px 5px 5px;
+}
+
+#upBox {
     display: flex;
 }
 
-#basicOperation{
-    gap:3px;
+#basicOperation {
+    gap: 3px;
     display: flex;
     align-items: center;
 }
 
-#downBox{
-    overflow-x:auto;
-    white-space:nowrap;
+#downBox {
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
-#downBoxMenu{
-    display:inline-flex;
-    padding:0;
+#downBoxMenu {
+    display: inline-flex;
+    padding: 0;
     margin: 0;
-    gap:5px;
+    gap: 5px;
 }
 
-#downBoxMenu li{
-    margin:2px;
-    padding:5px 10px;
+#downBoxMenu li {
+    margin: 2px;
+    padding: 5px 10px;
     list-style: none;
     white-space: nowrap;
-    border:1px solid white;
+    border: 1px solid white;
     border-radius: 20px;
-    gap:3px; 
+    gap: 3px;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#newProductsTitle {
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#newProductsMenu {
+    margin: 5px;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    gap: 6px;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+#footerMenu {
+    background-color: white;
+    font-size: 12px;
+    font-weight: 700;
+    list-style: none;
+    display: flex;
+}
+
+#footerMenu a {
+    color: black;
+}
+
+#footMenu {
+    display: flex;
+}
+
+.footerInfo {
+    display: flex;
+}
+
+#footerRight {
+    width: 35%;
+    padding: 5px;
+    padding-left: 100px;
+}
+
+#footerLeft {
+    width: 35%;
+    padding: 5px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#CustomerCare {
+    list-style: none;
+    padding: 10px;
+}
+
+#aboutLush {
+    list-style: none;
+    padding: 10px;
+}
+
+#cushType {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#cushType li {
+    list-style: none;
+}
+
+#underFooter {
+    text-align: center;
+}
+
+#copyRight {
+    text-align: center;
 }
